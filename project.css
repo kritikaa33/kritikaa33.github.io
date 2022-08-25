@@ -1,0 +1,543 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif
+}
+.header{
+    width:100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/aqua.jpg);
+    position:relative;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+
+    padding: 10px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+
+    width: 150px;
+
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding:8px 12px;
+    position:relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 17px;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0px;
+    height: 2px;
+    background:aliceblue;
+    display: block;
+    margin:auto;
+    transition: 0.5s;
+
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+
+.content{
+    width:90%;
+    color:aliceblue;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+.content h4{
+    font-size:50px;
+    color:aliceblue;
+}
+.content h1{
+    font-size: 100px;
+    color:aliceblue;
+}
+.content h4{
+    font-size:30px;
+    color:aliceblue;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color:aliceblue;
+    font-size: 20px;
+    border:2px solid #fff;
+    padding:10px 30px;
+    border-radius: 50px;
+    margin-top: 20px;;
+
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color:aliceblue;
+    font-size: 20px;
+    border:2px solid #fff;
+    padding:10px 30px;
+    border-radius: 50px;
+    margin-top: 20px;;
+
+}
+.content a:hover{
+    background:navy;
+}
+nav .fa{
+    display: none;;
+}
+@media(max-width:700px){
+    .content{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgba(3, 77, 157, 0.7);
+        height: 100vh;
+        width:200px;
+        top:0;
+        right: -200px;;
+        text-align:left;
+        z-index:2;
+        
+    }
+
+    .row{
+        flex-direction: column;
+    }
+}
+
+.visit{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+    color:navy;
+}
+.visit-col{
+    flex-basis: 29%;
+    border-radius:10px;
+    margin-bottom:20px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.row{
+    margin-top: 5%;
+    display:flex;
+    float:left;
+    justify-content:space-between;
+    border: 1px;
+    
+}
+.visit-col img{
+    width: 350px;
+    height: 350px;
+    display: block;
+    box-shadow: 0 2px 4px 0 gray, 0 4px 16px 0 gray;
+   
+}
+.visit-col:hover{
+    box-shadow: 0 0 20px 0 rgba(4,9,30,0.7);
+    
+}
+.layer{
+    background:transparent;
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition:0.5s;
+    
+}
+.layer:hover{
+    background: rgba(3, 77, 157, 0.7);
+}
+.layer h3{
+    width:100%;
+    font-weight:500;
+    color:aliceblue;
+    font-size: 26px;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    
+    transition:0.5s;
+}
+.layer h3 a{
+    text-decoration: none;
+    color:aliceblue;
+}
+.layer:hover h3{
+    bottom:49%;
+    opacity: 1;
+}
+footer
+{
+    position: relative;
+    margin-top: 500px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 200px;
+    width: 100%;
+    background-color: navy;
+    color:aliceblue;
+    padding-left: 60px;
+    text-align: center;
+}
+footer ul li{
+    list-style: none;
+    display:inline-block;
+    padding:8px 12px;
+    position:relative;
+}
+footer ul li a{ 
+    text-decoration: none;
+    color:aliceblue;
+}
+.footer-bottom{
+    position:sticky;
+}
+
+/*--------ABOUT US PAGE----------*/
+.sub-header{
+    height:75vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/sharkk.webp);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color:aliceblue;
+    
+}
+.sub-header h1{
+    width:90%;
+    color:aliceblue;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    font-size:100px;
+}
+.about-us{
+    width: 80%;
+    color: black ;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding:30px 2px;
+}
+.about-col img{
+    width: 400px;
+    height:400px;
+    box-shadow: 50px;
+
+}
+
+/*---------------Explore------*/
+.top{
+    height:75vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/person.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color:aliceblue;
+    
+}
+.top h1{
+    width:90%;
+    color:aliceblue;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    font-size:100px;
+}
+.text-col{
+    width: 80%;
+    color: navy; 
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+.text-col{
+    flex-basis: 48%;
+    padding:30px 2px;
+}
+.plow{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 10px;
+    color:navy;
+}
+.plow-col{
+    flex-basis: 29%;
+    border-radius:10px;
+    margin-bottom:20px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.plow-col img{
+    width: 350px;
+    height: 350px;
+    display: block;
+    box-shadow: 0 2px 4px 0 gray, 0 4px 16px 0 gray;
+   
+}
+.plow-col:hover{
+    box-shadow: 0 0 20px 0 rgba(4,9,30,0.7);
+    
+}
+.layer{
+    background:transparent;
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition:0.5s;
+    
+}
+.layer:hover{
+    background: rgba(3, 77, 157, 0.7);
+}
+.layer h3{
+    width:100%;
+    font-weight:500;
+    color:aliceblue;
+    font-size: 26px;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    
+    transition:0.5s;
+}
+.layer h3 a{
+    text-decoration: none;
+    color:aliceblue;
+}
+.layer:hover h3{
+    bottom:49%;
+    opacity: 1;
+}
+
+/*-------------Contact us-----------**/
+
+.up{
+    height:85vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/dubai-aquarium-underwater.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color:aliceblue;
+    
+}
+.up h1{
+    width:90%;
+    color:aliceblue;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    font-size:100px;
+}
+.con{
+    width: 80%;
+    color:navy ;
+    margin: auto;
+    padding-top: 80px;
+   
+}
+.con-col{
+    padding-bottom: 30px;
+    width: 350px;
+    height: 350px;
+    display: block;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+
+/*-----------Gallery---------*/
+.line{
+    height:10vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/dubai-aquarium-underwater.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color:aliceblue;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+  }
+  
+  .container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+  }
+  .container .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+  }
+  
+  .container .heading h3 span{
+    font-weight: 100;
+  }
+  .container .box{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  }
+  
+  .container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+  }
+  
+  .container .box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: rgb 0px 5px 15px;
+  }
+  
+  .container .btn{
+    margin: 40px 0 70px 0;
+    background: navy;
+    padding: 15px 20px ;
+    border-radius: 5px;
+    
+  }
+  
+  .container .btn a{
+   color: #fff;
+   font-size: 1.2em;
+   text-decoration: none;
+   font-weight: bolder;
+   letter-spacing: 3px;
+  }
+
+  @media only screen and (max-width: 769px){
+      .container .box{
+     flex-direction: column;
+    }
+  
+  .container .box .dream{
+    width: 100%;
+  }
+  }
+
+  /*-------Sign Up Form-------**/
+  .hi{
+    height:20vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/seal_header.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color:aliceblue;
+}
+
+.hell{
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    max-width: 700px;
+    width: 100%;
+    padding:25px 30px;
+    border-radius: 5px;
+    background: navy;
+    color: aliceblue;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+.hell .title{
+    font-size:25px;
+    font-weight:500;
+}
+.hell form .user-details{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin:20px 0 12px 0;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width:calc(100%/2 - 20px);
+}
+.user-details .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input{
+    height: 45px;
+    width:100%;
+    outline:none;
+    border-radius: 5px;
+    border:1px solid;
+    padding-left: 15px;
+    font-size:16px;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color:#222;
+}
+form .button{
+    height:45px;
+    margin:45px 0;
+}
+form .button input{
+    height:100%;
+    width:100%;
+    outline: none;
+    color:#fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: lightpink;
+}
+
